@@ -10,8 +10,51 @@ import SplitText from "./components/SplitText/SplitText";
 import BlurText from "./components/BlurText/BlurText";
 import Iridescence from "./components/Iridescence/Iridescence";
 import Lightfall from "./components/Lightfall/Lightfall";
+import { DiVisualstudio } from "react-icons/di";
+import {
+  SiDjango,
+  SiPython,
+  SiKotlin,
+  SiNodedotjs,
+  SiNextdotjs,
+  SiJavascript,
+  SiPostgresql,
+  SiMysql,
+  SiGo,
+  SiGit,
+  SiGithub,
+  SiLinux,
+  SiLaravel,
+  SiPhp,
+  SiReact,
+  SiVuedotjs,
+  SiGitlab,
+  SiTailwindcss,
+} from "react-icons/si";
+
 
 // ─── Data ───────────────────────────────────────────────────────────────────
+
+const TECH_STACKS = [
+  { name: "Django", icon: <SiDjango className="text-[#092E20]" /> }, 
+  { name: "Python", icon: <SiPython className="text-[#306998]" /> }, 
+  { name: "Kotlin", icon: <SiKotlin className="text-[#7F52FF]" /> }, 
+  { name: "PHP", icon: <SiPhp className="text-[#C923EE]" /> }, 
+  { name: "Laravel", icon: <SiLaravel className="text-[#F70101]" /> }, 
+  { name: "Node / Express", icon: <SiNodedotjs className="text-[#68A063]" /> }, 
+  { name: "ReactJS", icon: <SiReact className="text-[#239EE0]" /> }, 
+  { name: "VueJS", icon: <SiVuedotjs className="text-[#23E030]" /> }, 
+  { name: "NextJS", icon: <SiNextdotjs className="text-black dark:text-white" /> }, 
+  { name: "Go", icon: <SiGo className="text-[#00ADD8]" /> }, 
+  { name: "JavaScript", icon: <SiJavascript className="text-[#F7DF1E]" /> }, 
+  { name: "TailwindCSS", icon: <SiTailwindcss className="text-[#3B0AE9]" /> }, 
+  { name: "MySQL", icon: <SiMysql className="text-[#4479A1]" /> }, 
+  { name: "PostgreSQL", icon: <SiPostgresql className="text-[#336791]" /> },
+  { name: "Git", icon: <SiGit className="text-[#F05032]" /> }, 
+  { name: "GitLab", icon: <SiGitlab className="text-[#F5812E]" /> }, 
+  { name: "GitHub", icon: <SiGithub className="text-black dark:text-white" /> }, 
+  { name: "VS Code", icon: <DiVisualstudio className="text-[#007ACC]" /> }, 
+];
 
 const PROJECTS = [
   {
@@ -217,7 +260,7 @@ export default function Home() {
           </div>
         </nav>
 
-        {/* About Section */}
+        {/* Home Section */}
         <section id="home" className="pt-24 pb-20 relative">
           <div className="absolute inset-0 opacity-20 z-0">
             <div className="bg-white"></div>
@@ -382,6 +425,56 @@ export default function Home() {
                     </div>
                   </AnimatedContent>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section id="home" className="pt-24 pb-20 relative">
+          <div className="absolute inset-0 opacity-10 z-0">
+            <div className="bg-white"></div>
+          </div>
+          <div className="container mx-auto px-6 relative z-10">
+            <AnimatedContent
+              distance={80}
+              direction="vertical"
+              reverse={false}
+              initialOpacity={0}
+              animateOpacity
+              threshold={0.3}
+            >
+              <div className="text-center mb-16">
+                <h2 className="text-4xl lg:text-6xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-6">
+                  About
+                </h2>
+                <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+                  Tech Stacks
+                </p>
+              </div>
+            </AnimatedContent>
+
+            <div className="max-w-7xl mx-auto">
+              <div className="flex flex-wrap gap-3">
+                {TECH_STACKS.map((tech, index) => (
+                  <AnimatedContent
+                    key={index}
+                    distance={60}
+                    direction="vertical"
+                    reverse={false}
+                    initialOpacity={0}
+                    animateOpacity
+                    threshold={0.4}
+                  >
+                    <div
+                      key={index}
+                      className="flex items-center gap-2 px-3 py-2 bg-slate-100 dark:bg-slate-800 rounded-lg shadow-sm"
+                    >
+                      {tech.icon}
+                      <span className="text-sm font-medium">{tech.name}</span>
+                    </div>
+                  </AnimatedContent>
+                ))}
               </div>
             </div>
           </div>
