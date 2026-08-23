@@ -185,12 +185,13 @@ export default function Home() {
                       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full" />
                     </button>
                   ))}
-                  <button
-                    onClick={() => scrollTo("contact")}
+                  <a 
+                    href="/CV_ATS_Mochamad_Yusuf_English.pdf"
+                    target="_blank"
                     className="px-6 py-2 bg-gradient-to-r from-red-600 to-rose-600 text-white rounded-xl text-sm font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
                   >
-                    Let&apos;s Talk
-                  </button>
+                    Resume
+                  </a>
                 </div>
               </AnimatedContent>
 
@@ -246,15 +247,13 @@ export default function Home() {
                     {item.label}
                   </button>
                 ))}
-                <button
-                  onClick={() => {
-                    scrollTo("contact");
-                    setMenuOpen(false);
-                  }}
-                  className="mt-2 px-6 py-2 bg-gradient-to-r from-red-600 to-rose-600 text-white rounded-xl text-sm font-medium text-center"
+                <a 
+                  href="/CV_ATS_Mochamad_Yusuf_English.pdf"
+                  target="_blank"
+                  className="px-6 py-2 bg-gradient-to-r from-red-600 to-rose-600 text-white rounded-xl text-sm font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
                 >
-                  Let&apos;s Talk
-                </button>
+                  Resume
+                </a>
               </div>
             )}
           </div>
@@ -415,7 +414,12 @@ export default function Home() {
                           />
                         </svg>
                       </button>
-
+                      <a 
+                        href="/CV_ATS_Mochamad_Yusuf_English.pdf"
+                        className="px-8 py-4 border-2 border-red-400 text-white bg-gradient-to-r from-red-400 to-rose-400 rounded-xl font-medium hover:bg-red-50 hover:border-red-300 transition-all duration-300"
+                      >
+                        Resume
+                      </a>
                       <button
                         onClick={() => scrollTo("contact")}
                         className="px-8 py-4 border-2 border-red-200 text-slate-700 rounded-xl font-medium hover:bg-red-50 hover:border-red-300 transition-all duration-300 backdrop-blur-sm"
