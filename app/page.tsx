@@ -85,7 +85,7 @@ const PROJECTS = [
     title: "Server Arab Dictionary",
     description:
       "Server to manage content in Arab Indonesia Dictionary",
-    tech: ["Server", "API", "Website", "Laravel"],
+    tech: ["Server", "API", "Website", "Laravel", "PHP"],
     status: "Live",
     statusColor: "bg-purple-100 text-purple-800 border-purple-200",
     gradient: "from-teal-400 to-cyan-500",
@@ -97,13 +97,25 @@ const PROJECTS = [
     title: "Coronavirus Machine Learning",
     description:
       "Machine learning operation to clasification text-based coronavirus tweet have positive sentiment or not",
-    tech: ["Machine Learning", "Artificial Intelegent", "Coronavirus", "Railways"],
+    tech: ["Machine Learning", "Artificial Intelegent", "Python", "Coronavirus", "Railways"],
     status: "Live",
     statusColor: "bg-purple-100 text-purple-800 border-purple-200",
     gradient: "from-teal-400 to-cyan-500",
     image: "/assets/projects/coronavirus-machine-learning.png",
     github: "https://github.com/mochyusuf/MLOps-Submission-2",
     live: "https://mlops-submission-2-production-2244.up.railway.app/v1/models/coronavirus-model/metadata",
+  }, 
+  {
+    title: "UI/UX Arks Mobile App",
+    description:
+      "User Interface / User Experience for Akrs Clothing Store Mobile App using Figma",
+    tech: ["User Interface", "User Experience", "Figma", "Wireframe", "Prototype"],
+    status: "Live",
+    statusColor: "bg-purple-100 text-purple-800 border-purple-200",
+    gradient: "from-teal-400 to-cyan-500",
+    image: "/assets/projects/ui_ux_arks.png",
+    github: "#",
+    live: "https://www.figma.com/design/KRB2TtzJFZjfsEuLbSLxNy/Arks-20?node-id=306-2&t=KhmqrLWw2ifwXtbr-1",
   }, 
 ];
 
