@@ -126,9 +126,19 @@ const CERTIFICATES = [
     date: "4 Agustus 2023",
     color: "from-blue-500 to-indigo-600",
     icon: "🏅",
-    image: "/assets/certificates/serti_1.jpg",
+    image: "/assets/certificates/serti_bnsp.jpg",
     placeholder: false,
     description: "Telah dinyatakan kompeten pada bidang web development atau pengembangan website dengan kualifikasi junior web development",
+  },
+  {
+    title: "Desain UX Google Specialization",
+    issuer: "Google",
+    date: "13 Juli 2024",
+    color: "from-blue-500 to-indigo-600",
+    icon: "🏅",
+    image: "/assets/certificates/serti_desain_ux_google.jpeg",
+    placeholder: false,
+    description: "Telah menyelesaikan penelitian UX, memahami konsep UX dasar, dan membuat portofolio UX profesional berisikan 3 proyek utuh dari awal hingga akhir",
   }
 ];
 
