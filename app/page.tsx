@@ -82,6 +82,18 @@ const PROJECTS = [
     live: "https://play.google.com/store/apps/details?id=com.mochyusuf.congklak",
   }, 
   {
+    title: "Arab Dictionary",
+    description:
+      "Arab Dictionary with tutorial, searching and quiz. Created using Flutter and dart",
+    tech: ["Android", "Flutter", "Dart", "Dictionary"],
+    status: "Live",
+    statusColor: "bg-purple-100 text-purple-800 border-purple-200",
+    gradient: "from-teal-400 to-cyan-500",
+    image: "/assets/projects/kamus-arab.png",
+    github: "https://github.com/mochyusuf/kamus-arab",
+    live: "#",
+  }, 
+  {
     title: "Server Arab Dictionary",
     description:
       "Server to manage content in Arab Indonesia Dictionary",
@@ -97,7 +109,7 @@ const PROJECTS = [
     title: "Coronavirus Machine Learning",
     description:
       "Machine learning operation to clasification text-based coronavirus tweet have positive sentiment or not",
-    tech: ["Machine Learning", "Artificial Intelegent", "Python", "Coronavirus", "Railways"],
+    tech: ["Machine Learning", "Artificial Intelegent", "Python", "Coronavirus", "Railways", "Tensorflow"],
     status: "Live",
     statusColor: "bg-purple-100 text-purple-800 border-purple-200",
     gradient: "from-teal-400 to-cyan-500",
